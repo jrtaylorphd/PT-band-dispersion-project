@@ -1,7 +1,6 @@
 # PT-band-dispersion-project
 # Computes the band dispersion functions for the PT symmetric linear Schrodinger equation with a complex-valued potential.
 
-# Enter the 'spectral_bands_1_2' directory
 # Run 'linear_spec_plot' to initiate code
 
 # PARAMETERS
