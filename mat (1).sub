@@ -1,0 +1,13 @@
+#! /bin/bash
+#$ -S /bin/bash
+#$ -q std.q
+#$ -cwd
+#$ -N matlab
+#$ -t 1-2
+#$ -o ./output
+#$ -j y
+#$ -l mem_free=10G
+#$ -pe smp 1
+# This job file uses a shared-memory parallel environment and requests 1 core on a single node. 
+
+/opt/MATLAB/R2016b/bin/matlab -nodesktop -nodisplay -r "input_ind=$SGE_TASK_ID;driver_taxi"
